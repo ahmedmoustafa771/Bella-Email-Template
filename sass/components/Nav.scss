@@ -1,0 +1,54 @@
+/* Nav*/
+.nav {
+    height: 61.8rem;
+    width: 100%;
+    background-image: url("images/WhatsApp Image 2020-04-25 at 23.56.59.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 5rem;
+    position: relative;
+
+    &__block {
+        width: 60rem;
+        height: 32.2rem;
+        background-color: #dee2ebc9;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    &__el {
+        width: 28rem;
+        height: 15rem;
+        font-size: 1.2rem;
+        display: flex;
+        flex-flow: row;
+        padding: 2rem;
+
+        &--icon {
+            font-size: 3rem;
+            margin-right: 2rem;
+        }
+        &--p {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        &--btn {
+            font-weight: 500;
+            text-decoration: none;
+            margin-top: 2rem;
+            text-transform: uppercase;
+            background: none;
+            border: none;
+            font-size: 1rem;
+            color: #5e5d5d;
+        }
+    }
+}

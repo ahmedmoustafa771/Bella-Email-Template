@@ -1,0 +1,13 @@
+/* Video*/
+.video {
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    &__window {
+        width: 64rem;
+        height: 33.5rem;
+    }
+}

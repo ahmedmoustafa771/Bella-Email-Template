@@ -1,0 +1,26 @@
+/* Signup*/
+.signup {
+    height: 35.3rem;
+    width: 100%;
+    font-size: 1.4rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &__header {
+        font-weight: 300;
+        margin-bottom: 5.5rem;
+        max-width: 60rem;;
+        text-transform: uppercase;
+    }
+    &__btn {
+        width: 25rem;
+        height: 4.5rem;
+        background-color: #ec5483;
+        color: white;
+        text-transform: uppercase;
+    }
+
+}

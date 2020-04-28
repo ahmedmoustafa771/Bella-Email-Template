@@ -1,0 +1,38 @@
+/* Footer*/
+.footer {
+    height: 30rem;
+    width: 100%;
+    background-color: #38404b;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+
+    &__logo {
+        font-weight: 500;
+        font-size: 2.5rem;
+        color: white;
+        margin-bottom: 5rem;
+    }
+    &__tools {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 3rem;
+
+        &--1 {
+            display:inline-block;
+            color: #bcc9dd;
+        }
+        &--1:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__p {
+        font-size: 1rem;
+        color: #bcc9dd;
+        font-weight: 300;
+    }
+    
+}
