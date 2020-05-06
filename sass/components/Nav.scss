@@ -1,25 +1,17 @@
 /* Nav*/
 .nav {
-    height: 61.8rem;
-    width: 100%;
     background-image: url("images/WhatsApp Image 2020-04-25 at 23.56.59.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-top: 5rem;
-    position: relative;
+    padding: 10% 0;
+    margin-bottom: 10rem;
 
     &__block {
-        width: 60rem;
-        height: 32.2rem;
         background-color: #dee2ebc9;
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+
+
 
     }
     &__el {
@@ -29,6 +21,7 @@
         display: flex;
         flex-flow: row;
         padding: 2rem;
+        text-align: left;
 
         &--icon {
             font-size: 3rem;
@@ -49,6 +42,15 @@
             border: none;
             font-size: 1rem;
             color: #5e5d5d;
+            transition: all .2s;
+
+            &:hover {
+                transform: translateY(-3px);
+                cursor: pointer;
+              }
+            &:active {
+                transform: translateY(1px);
+            }
         }
     }
 }

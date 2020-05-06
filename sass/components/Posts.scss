@@ -1,19 +1,7 @@
 /* Posts*/
 .pics {
-    height: 40rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-
     &__post {
-        height: 39rem;
-        width: 28rem;
-
-        &:not(:last-child){
-            margin-right: 4rem;
-        }
+        
         &--img {
             width: 100%;
             height: 23rem;

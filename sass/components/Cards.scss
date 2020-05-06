@@ -1,22 +1,11 @@
 /* Cards*/
-.cards {
-    width: 100%;
-    height: 43rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 13.5rem;
+.cardsss {
+    margin-bottom: 10rem;
 
     &__layout {
-        height: 100%;
-        width: 19rem;
         text-align: center;
         font-size: 1.5rem;
         margin-top: 10rem;
-
-        &:not(:last-child){
-            margin-right: 3.5rem;
-        }
 
         &--icon {
             font-size: 5rem;
@@ -29,9 +18,19 @@
             text-decoration: none;
             margin-top: 3.5rem;
             text-transform: uppercase;
-            background: none;
+            background: transparent;
             border: none;
             font-size: 1.5rem;
+            transition: all .2s;
+            
+
+            &:hover {
+                transform: translateY(-3px);
+                cursor: pointer;
+              }
+            &:active {
+                transform: translateY(1px);
+            }
         }
     }
 

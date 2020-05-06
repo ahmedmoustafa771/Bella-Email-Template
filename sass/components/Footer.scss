@@ -1,7 +1,6 @@
 /* Footer*/
 .footer {
     height: 30rem;
-    width: 100%;
     background-color: #38404b;
     display: flex;
     align-items: center;
@@ -23,6 +22,15 @@
         &--1 {
             display:inline-block;
             color: #bcc9dd;
+            transition: all .2s;
+
+            &:hover {
+                transform: translateY(-3px);
+                cursor: pointer;
+              }
+            &:active {
+                transform: translateY(1px);
+            }
         }
         &--1:not(:last-child) {
             margin-right: 2rem;

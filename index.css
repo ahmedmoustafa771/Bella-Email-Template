@@ -17,21 +17,13 @@ body {
 }
 
 /* Header */
-.header {
-  width: 100%;
-  height: 10rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 .header__title {
   font-weight: 500;
   font-size: 3rem;
-  margin-left: 12.5rem;
+  margin-left: 25%;
+  margin-right: 5%;
 }
 .header__tools {
-  flex-shrink: 0;
-  margin-right: 12.5rem;
   font-size: 1.8rem;
   font-weight: 300;
 }
@@ -44,7 +36,6 @@ body {
 
 /* Main */
 .main {
-  width: 100%;
   height: 45rem;
   background-image: url("images/WhatsApp Image 2020-04-25 at 23.15.19.jpeg");
   background-size: 100% 100%;
@@ -54,6 +45,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 6rem;
 }
 .main__header {
   font-size: 5.3rem;
@@ -68,62 +60,63 @@ body {
   height: 4.5rem;
   border-radius: 5rem;
   background-color: #ec5483;
+  border: none;
   color: white;
+  transition: all 0.2s;
+  font-size: 1.5rem;
+}
+.main__btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.main__btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 /* Cards*/
-.cards {
-  width: 100%;
-  height: 43rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 13.5rem;
+.cardsss {
+  margin-bottom: 10rem;
 }
-.cards__layout {
-  height: 100%;
-  width: 19rem;
+.cardsss__layout {
   text-align: center;
   font-size: 1.5rem;
   margin-top: 10rem;
 }
-.cards__layout:not(:last-child) {
-  margin-right: 3.5rem;
-}
-.cards__layout--icon {
+.cardsss__layout--icon {
   font-size: 5rem;
 }
-.cards__layout--p {
+.cardsss__layout--p {
   margin-top: 3rem;
 }
-.cards__layout--btn {
+.cardsss__layout--btn {
   font-weight: 500;
   text-decoration: none;
   margin-top: 3.5rem;
   text-transform: uppercase;
-  background: none;
+  background: transparent;
   border: none;
   font-size: 1.5rem;
+  transition: all 0.2s;
+}
+.cardsss__layout--btn:hover {
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+.cardsss__layout--btn:active {
+  transform: translateY(1px);
 }
 
 /* Reviews*/
 .reviews {
-  height: 50rem;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 10rem;
 }
 .reviews__box {
-  height: 100%;
-  width: 28rem;
   text-align: center;
   font-size: 1.5rem;
   margin-top: 0;
-}
-.reviews__box:not(:last-child) {
-  margin-right: 3.5rem;
+  padding: 0 10%;
 }
 .reviews__box--p {
   padding: 3rem 2rem;
@@ -136,7 +129,7 @@ body {
   border-right: 1px solid rgba(128, 128, 128, 0.205);
   margin-left: 50%;
   margin-bottom: 2rem;
-  margin-top: -0.5rem;
+  margin-top: -1.5rem;
   transform: rotate(45deg) translateY(50%) translateX(-50%);
   background-color: white;
 }
@@ -161,33 +154,11 @@ body {
 
 /* Video*/
 .video {
-  height: 40rem;
-  width: 100%;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
-.video__window {
-  width: 64rem;
-  height: 33.5rem;
+  text-align: center;
+  margin-bottom: 10rem;
 }
 
 /* Posts*/
-.pics {
-  height: 40rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-.pics__post {
-  height: 39rem;
-  width: 28rem;
-}
-.pics__post:not(:last-child) {
-  margin-right: 4rem;
-}
 .pics__post--img {
   width: 100%;
   height: 23rem;
@@ -208,26 +179,16 @@ body {
 
 /* Nav*/
 .nav {
-  height: 61.8rem;
-  width: 100%;
   background-image: url("images/WhatsApp Image 2020-04-25 at 23.56.59.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin-top: 5rem;
-  position: relative;
+  padding: 10% 0;
+  margin-bottom: 10rem;
 }
 .nav__block {
-  width: 60rem;
-  height: 32.2rem;
   background-color: #dee2ebc9;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 .nav__el {
   width: 28rem;
@@ -236,6 +197,7 @@ body {
   display: flex;
   flex-flow: row;
   padding: 2rem;
+  text-align: left;
 }
 .nav__el--icon {
   font-size: 3rem;
@@ -256,35 +218,34 @@ body {
   border: none;
   font-size: 1rem;
   color: #5e5d5d;
+  transition: all 0.2s;
+}
+.nav__el--btn:hover {
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+.nav__el--btn:active {
+  transform: translateY(1px);
 }
 
 /* Offers*/
 .offers {
-  height: 47.4rem;
-  width: 100%;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
-}
-.offers__card {
-  width: 60rem;
-  height: 15.5rem;
-  display: flex;
-  align-items: flex-start;
+  margin-bottom: 10rem;
 }
 .offers__card:not(:last-child) {
   margin-bottom: 6rem;
 }
 .offers__card--img {
-  width: 18.7rem;
   margin-right: 2rem;
   height: 100%;
 }
 .offers__card--p1 {
   font-size: 1.5rem;
   font-weight: 500;
-  margin-bottom: 2.5rem;
 }
 .offers__card--p2 {
   font-size: 1.2rem;
@@ -294,7 +255,6 @@ body {
 /* Signup*/
 .signup {
   height: 35.3rem;
-  width: 100%;
   font-size: 1.4rem;
   display: flex;
   flex-flow: column;
@@ -314,12 +274,22 @@ body {
   background-color: #ec5483;
   color: white;
   text-transform: uppercase;
+  border: none;
+  transition: all 0.2s;
+}
+.signup__btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.signup__btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 /* Footer*/
 .footer {
   height: 30rem;
-  width: 100%;
   background-color: #38404b;
   display: flex;
   align-items: center;
@@ -341,6 +311,14 @@ body {
 .footer__tools--1 {
   display: inline-block;
   color: #bcc9dd;
+  transition: all 0.2s;
+}
+.footer__tools--1:hover {
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+.footer__tools--1:active {
+  transform: translateY(1px);
 }
 .footer__tools--1:not(:last-child) {
   margin-right: 2rem;
