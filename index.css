@@ -17,11 +17,21 @@ body {
 }
 
 /* Header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .header__title {
   font-weight: 500;
   font-size: 3rem;
-  margin-left: 25%;
-  margin-right: 5%;
+  flex-grow: 1;
+  margin-left: 13.5rem;
+}
+@media (max-width: 576px) {
+  .header__title {
+    margin-left: 2rem;
+  }
 }
 .header__tools {
   font-size: 1.8rem;
@@ -34,11 +44,15 @@ body {
   margin-right: 2rem;
 }
 
+.navbar-collapse {
+  flex-grow: 0;
+  margin-right: 13.5rem;
+}
+
 /* Main */
 .main {
-  height: 45rem;
+  height: 80vh;
   background-image: url("images/WhatsApp Image 2020-04-25 at 23.15.19.jpeg");
-  background-size: 100% 100%;
   background-size: cover;
   text-align: center;
   display: flex;
@@ -51,12 +65,18 @@ body {
   font-size: 5.3rem;
   font-weight: 300;
   margin-bottom: 5rem;
+  color: #4d4b4a;
+  /* text-shadow:
+  -1px -1px 0 #ec5483,
+  1px -1px 0 #ec5483,
+  -1px 1px 0 #ec5483,
+  1px 1px 0 #ec5483; */
 }
 .main__header--1 {
   font-weight: 600;
 }
 .main__btn {
-  width: 25rem;
+  width: 22rem;
   height: 4.5rem;
   border-radius: 5rem;
   background-color: #ec5483;
@@ -116,7 +136,12 @@ body {
   text-align: center;
   font-size: 1.5rem;
   margin-top: 0;
-  padding: 0 10%;
+  padding: 0 5%;
+}
+@media (max-width: 576px) {
+  .reviews__box {
+    padding: 0;
+  }
 }
 .reviews__box--p {
   padding: 3rem 2rem;
@@ -161,7 +186,6 @@ body {
 /* Posts*/
 .pics__post--img {
   width: 100%;
-  height: 23rem;
   margin-bottom: 3.5rem;
 }
 .pics__post--cap1 {
@@ -191,9 +215,9 @@ body {
   background-color: #dee2ebc9;
 }
 .nav__el {
+  flex-grow: 1;
   width: 28rem;
-  height: 15rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   display: flex;
   flex-flow: row;
   padding: 2rem;

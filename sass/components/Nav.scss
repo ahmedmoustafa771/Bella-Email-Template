@@ -15,9 +15,9 @@
 
     }
     &__el {
+        flex-grow: 1;
         width: 28rem;
-        height: 15rem;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         display: flex;
         flex-flow: row;
         padding: 2rem;

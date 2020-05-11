@@ -1,8 +1,7 @@
 /* Main */
 .main {
-    height: 45rem;
+    height: 80vh;
     background-image: url("images/WhatsApp Image 2020-04-25 at 23.15.19.jpeg");
-    background-size: 100% 100%;
     background-size: cover;
     text-align: center;
     display: flex;
@@ -16,6 +15,12 @@
         font-size: 5.3rem;
         font-weight: 300;
         margin-bottom: 5rem;
+        color: rgb(77, 75, 74);
+        /* text-shadow:
+		-1px -1px 0 #ec5483,
+		1px -1px 0 #ec5483,
+		-1px 1px 0 #ec5483,
+		1px 1px 0 #ec5483; */
 
         &--1 {
             font-weight: 600;
@@ -24,7 +29,7 @@
 
 
     &__btn {
-        width: 25rem;
+        width: 22rem;
         height: 4.5rem;
         border-radius: 5rem;
         background-color: #ec5483;

@@ -1,14 +1,22 @@
 /* Header */
 .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     &__title {
         font-weight: 500;
         font-size: 3rem;
-        margin-left: 25%;
-        margin-right: 5%;
+        flex-grow: 1;
+        margin-left: 13.5rem;
+        @media (max-width: 576px) {
+            margin-left: 2rem;
+        }
     }
     &__tools {
         font-size: 1.8rem;
         font-weight: 300;
+        
 
         &--1 {
             display:inline-block;
@@ -19,4 +27,9 @@
         }
     }
 
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+    margin-right: 13.5rem;
 }
